@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		EB49D5B21C76FDD900DDB058 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB49D5B11C76FDD900DDB058 /* main.m */; };
 		EB49D5B51C76FDD900DDB058 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB49D5B41C76FDD900DDB058 /* AppDelegate.m */; };
-		EB49D5B81C76FDD900DDB058 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB49D5B71C76FDD900DDB058 /* ViewController.m */; };
 		EB49D5BB1C76FDD900DDB058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB49D5B91C76FDD900DDB058 /* Main.storyboard */; };
 		EB49D5BD1C76FDD900DDB058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB49D5BC1C76FDD900DDB058 /* Assets.xcassets */; };
 		EB49D5C01C76FDD900DDB058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB49D5BE1C76FDD900DDB058 /* LaunchScreen.storyboard */; };
 		EB49D5CB1C76FDD900DDB058 /* TWTableviewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB49D5CA1C76FDD900DDB058 /* TWTableviewDemoTests.m */; };
 		EB49D5D61C76FDD900DDB058 /* TWTableviewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB49D5D51C76FDD900DDB058 /* TWTableviewDemoUITests.m */; };
+		EB49D5E71C76FE0700DDB058 /* TWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB49D5E41C76FE0700DDB058 /* TWViewController.m */; };
+		EB49D5E81C76FE0700DDB058 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = EB49D5E61C76FE0700DDB058 /* UIImage+Color.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		EB49D5B11C76FDD900DDB058 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB49D5B31C76FDD900DDB058 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB49D5B41C76FDD900DDB058 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EB49D5B61C76FDD900DDB058 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EB49D5B71C76FDD900DDB058 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB49D5BA1C76FDD900DDB058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB49D5BC1C76FDD900DDB058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB49D5BF1C76FDD900DDB058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,10 @@
 		EB49D5D11C76FDD900DDB058 /* TWTableviewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWTableviewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB49D5D51C76FDD900DDB058 /* TWTableviewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWTableviewDemoUITests.m; sourceTree = "<group>"; };
 		EB49D5D71C76FDD900DDB058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB49D5E31C76FE0700DDB058 /* TWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWViewController.h; sourceTree = "<group>"; };
+		EB49D5E41C76FE0700DDB058 /* TWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWViewController.m; sourceTree = "<group>"; };
+		EB49D5E51C76FE0700DDB058 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		EB49D5E61C76FE0700DDB058 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +104,12 @@
 		EB49D5AF1C76FDD900DDB058 /* TWTableviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EB49D5E31C76FE0700DDB058 /* TWViewController.h */,
+				EB49D5E41C76FE0700DDB058 /* TWViewController.m */,
+				EB49D5E51C76FE0700DDB058 /* UIImage+Color.h */,
+				EB49D5E61C76FE0700DDB058 /* UIImage+Color.m */,
 				EB49D5B31C76FDD900DDB058 /* AppDelegate.h */,
 				EB49D5B41C76FDD900DDB058 /* AppDelegate.m */,
-				EB49D5B61C76FDD900DDB058 /* ViewController.h */,
-				EB49D5B71C76FDD900DDB058 /* ViewController.m */,
 				EB49D5B91C76FDD900DDB058 /* Main.storyboard */,
 				EB49D5BC1C76FDD900DDB058 /* Assets.xcassets */,
 				EB49D5BE1C76FDD900DDB058 /* LaunchScreen.storyboard */,
@@ -270,9 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB49D5B81C76FDD900DDB058 /* ViewController.m in Sources */,
 				EB49D5B51C76FDD900DDB058 /* AppDelegate.m in Sources */,
+				EB49D5E81C76FE0700DDB058 /* UIImage+Color.m in Sources */,
 				EB49D5B21C76FDD900DDB058 /* main.m in Sources */,
+				EB49D5E71C76FE0700DDB058 /* TWViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
